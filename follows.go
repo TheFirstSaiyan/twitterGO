@@ -4,6 +4,6 @@ import "gorm.io/gorm"
 
 type follows struct {
 	gorm.Model
-	SourceId int64 `json:"sourceid"`
-	TargetId int64 `json:"targetid"`
+	SourceUser string `json:"sourceuser"`
+	TargetUser string `json:"targetuser"`
 }

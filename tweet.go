@@ -4,6 +4,6 @@ import "gorm.io/gorm"
 
 type tweet struct {
 	gorm.Model
-	UserId  int64  `json:"userid"`
-	Content string `json:"content"`
+	UserName string `json:"name"`
+	Content  string `json:"content"`
 }
